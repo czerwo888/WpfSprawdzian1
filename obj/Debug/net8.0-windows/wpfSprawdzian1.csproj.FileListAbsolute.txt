@@ -20,3 +20,4 @@ C:\Users\matbe\RiderProjects\wpfSprawdzian1\obj\Debug\net8.0-windows\refint\wpfS
 C:\Users\matbe\RiderProjects\wpfSprawdzian1\obj\Debug\net8.0-windows\wpfSprawdzian1.pdb
 C:\Users\matbe\RiderProjects\wpfSprawdzian1\obj\Debug\net8.0-windows\wpfSprawdzian1.genruntimeconfig.cache
 C:\Users\matbe\RiderProjects\wpfSprawdzian1\obj\Debug\net8.0-windows\ref\wpfSprawdzian1.dll
+C:\Users\matbe\RiderProjects\wpfSprawdzian1\obj\Debug\net8.0-windows\wpfSprawdzian1.sourcelink.json

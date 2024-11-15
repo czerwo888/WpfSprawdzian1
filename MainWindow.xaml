@@ -5,18 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfSprawdzian1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="600">
+        
+        <Window.Resources>
+                <Style TargetType="Button" >
+                        <Setter Property="Background" Value="RoyalBlue"></Setter>
+                        <Setter Property="Foreground" Value="Snow"></Setter>
+                        <Setter Property="FontSize" Value="15"></Setter>
+                        <Setter Property="Width" Value="100"></Setter>
+                        <Setter Property="BorderThickness" Value="3"></Setter>
+                </Style>
+                <Style TargetType="TextBox">
+                        <Setter Property="Width" Value="100"></Setter>
+                        <Setter Property="Height" Value="30"></Setter>
+                        
+                </Style>
+                <Style TargetType="Slider">
+                        <Setter Property="Margin" Value="20"></Setter>
+                        <Setter Property="Background" Value="DarkGreen"></Setter>
+                        <Setter Property="Foreground" Value="DarkRed"></Setter>
+                        <Setter Property="Width" Value="200"></Setter>
+                </Style>
+        </Window.Resources>
     
         <StackPanel Margin="20">
                 <!-- TextBox dla wartości 1-3 i przycisk Sprawdź -->
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                        <TextBox Name="numberTextBox" Width="50" TextAlignment="Center"/>
+                        <TextBox Name="numberTextBox" TextAlignment="Center"/>
                         <Button Name="createButton" Content="Stwórz" Click="CreateButton_Click" Margin="10,0,0,0"/>
                 </StackPanel>
 
                 <!-- Slider do zmiany rozmiaru czcionki przycisku "Stwórz" -->
-                <Slider Name="fontSizeSlider" Minimum="10" Maximum="20" ValueChanged="FontSizeSlider_ValueChanged"
-                        Width="200" Margin="0,10,0,0"/>
+                <Slider Name="fontSizeSlider" Minimum="10" Maximum="20" ValueChanged="FontSizeSlider_ValueChanged"/>
 
                 <!-- WrapPanel do generowania przycisków -->
                 <WrapPanel Name="buttonsPanel" Margin="0,10,0,0"/>
